@@ -1,9 +1,9 @@
 -- T-SQL script for SNAP eligibility calculations and reports
 
 -- Drop existing objects if they exist
-IF OBJECT_ID('dbo.vw_SnapCalculation','V') IS NOT NULL DROP VIEW dbo.vw_SnapCalculation;
-IF OBJECT_ID('dbo.Applicants','U') IS NOT NULL DROP TABLE dbo.Applicants;
-IF OBJECT_ID('dbo.FamilySizeInfo','U') IS NOT NULL DROP TABLE dbo.FamilySizeInfo;
+DROP VIEW IF EXISTS dbo.vw_SnapCalculation;
+DROP TABLE IF EXISTS dbo.Applicants;
+DROP TABLE IF EXISTS dbo.FamilySizeInfo;
 GO
 
 -- Table storing thresholds based on family size
